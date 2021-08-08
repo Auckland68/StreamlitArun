@@ -124,9 +124,14 @@ rfc3986==1.5.0
 rsa==4.7.2
 scikit-learn==0.24.2
 scipy==1.6.2
+scipy ==0.18.1
+scipy ==0.19.1
+scipy == 0.14
+scipy == 1.4.1
+scipy == 1.0
 seaborn==0.11.1
 #Send2Trash==1.5.0
-#setuptools==52.0.0.post20210125
+setuptools==52.0.0.post20210125
 six==1.15.0
 smart-open==5.1.0
 smmap==4.0.0
@@ -134,7 +139,7 @@ sniffio==1.2.0
 streamlit==0.85.1
 tenacity==6.3.1
 tensorboard==2.4.0
-#tensorboard-plugin-wit==1.6.0
+tensorboard-plugin-wit==1.6.0
 tensorflow==2.3.0
 tensorflow-estimator==2.5.0
 termcolor==1.1.0
