@@ -1,22 +1,17 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
 import streamlit as st
 import plotly.express as px
-
 import sklearn
-
 from wordcloud import WordCloud, STOPWORDS
 from spellchecker import SpellChecker
 from textblob import TextBlob
 import matplotlib.pyplot as plt
-
 import pickle
 import string
 import joblib
 import SessionState
-
 from collections import Counter
 import nltk
 import contractions
@@ -25,7 +20,6 @@ from nltk.util import ngrams
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
-
 from keras.preprocessing.text import Tokenizer
 from keras.models import load_model
 from keras.models import Sequential
@@ -33,7 +27,7 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.callbacks import EarlyStopping,ModelCheckpoint
 from keras.layers import Dense,Flatten,Embedding,Dropout
 from keras.models import model_from_json
-st.set_option('deprecation.showPyplotGlobalUse', False)
+#st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.title("Arun District Travel Review Data")
 st.sidebar.subheader("Dashboards")
@@ -200,6 +194,8 @@ if dashboard_choice == "Exploratory Data Analysis":
         st.sidebar.markdown(random.iat[0,2])
 
 elif dashboard_choice == "Keyword Analysis":
+
+    nltk.download('punkt')
 
     # Get keywords by town, category and sentiment
     st.sidebar.subheader("Keywords By Town, Category and Sentiment")
