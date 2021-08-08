@@ -196,6 +196,7 @@ if dashboard_choice == "Exploratory Data Analysis":
 elif dashboard_choice == "Keyword Analysis":
 
     nltk.download('punkt')
+    nltk.download('stopwords')
 
     # Get keywords by town, category and sentiment
     st.sidebar.subheader("Keywords By Town, Category and Sentiment")
