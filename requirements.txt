@@ -30,7 +30,7 @@ docopt==0.6.2
 entrypoints==0.3
 et-xmlfile==1.1.0
 gast==0.3.3
-gensim
+gensim==4.0.1
 gitdb==4.0.7
 GitPython==3.1.18
 google-auth==1.30.1
@@ -47,7 +47,7 @@ httpcore==0.9.1
 httpx==0.13.3
 hyperframe==5.2.0
 idna==2.10
-imbalanced-learn
+imbalanced-learn==0.8.0
 importlib-metadata==3.10.0
 ipykernel==5.3.4
 ipython==7.22.0
@@ -62,7 +62,7 @@ jupyter-client==6.1.12
 jupyter-core==4.7.1
 jupyterlab-pygments==0.1.2
 jupyterlab-widgets==1.0.0
-Keras
+Keras==2.4.3
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 kiwisolver==1.3.1
@@ -71,7 +71,7 @@ MarkupSafe==2.0.1
 matplotlib==3.3.4
 mistune==0.8.4
 mkl-fft==1.3.0
-#mkl-random==1.1.1
+mkl-random==1.1.1
 mkl-service==2.3.0
 multidict==5.1.0
 nbclient==0.5.3
@@ -113,7 +113,7 @@ PySocks==1.7.1
 pyspellchecker==0.6.2
 python-dateutil==2.8.1
 pytz==2021.1
-#pywin32==227
+pywin32==227
 pywinpty==0.5.7
 PyYAML==5.4.1
 pyzmq==20.0.0
@@ -122,11 +122,11 @@ requests==2.25.1
 requests-oauthlib==1.3.0
 rfc3986==1.5.0
 rsa==4.7.2
-scikit-learn
-scipy
-seaborn
-#Send2Trash==1.5.0
-#setuptools==52.0.0.post20210125
+scikit-learn==0.24.2
+scipy==1.6.2
+seaborn==0.11.1
+Send2Trash==1.5.0
+setuptools==52.0.0.post20210125
 six==1.15.0
 smart-open==5.1.0
 smmap==4.0.0
@@ -134,8 +134,8 @@ sniffio==1.2.0
 streamlit==0.85.1
 tenacity==6.3.1
 tensorboard==2.4.0
-#tensorboard-plugin-wit==1.6.0
-tensorflow
+tensorboard-plugin-wit==1.6.0
+tensorflow==2.3.0
 tensorflow-estimator==2.5.0
 termcolor==1.1.0
 terminado==0.9.4
