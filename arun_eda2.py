@@ -197,6 +197,7 @@ elif dashboard_choice == "Keyword Analysis":
 
     nltk.download('punkt')
     nltk.download('stopwords')
+    nltk.download('averaged_perceptron_tagger')
 
     # Get keywords by town, category and sentiment
     st.sidebar.subheader("Keywords By Town, Category and Sentiment")
