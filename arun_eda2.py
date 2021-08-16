@@ -40,7 +40,7 @@ st.sidebar.subheader("Arun District Travel Review Data")
 # Load dataset and cache the output
 DATA_URL = ("new_data.csv")
 
-@st.cache(persist = True)
+@st.cache(allow_output_mutation=True, max_entries = 10, ttl=3600)
 def load_data():
     data = pd.read_csv(DATA_URL)
     return data
