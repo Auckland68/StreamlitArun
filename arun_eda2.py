@@ -482,4 +482,6 @@ else:
             with st.spinner("Analysing the text"):
                 df = review_analyser(review,category)
                 df.drop(columns = ["A","S","Score","Sentences"],axis = 1, inplace = True)
+                df = df.groupby(['Predicted Aspect', 'Predicted Sentiment']).size().reset_index(name="Number")
+                df = df.groupby(['Predicted Aspect', 'Predicted Sentiment']).size().reset_index(name="Number")
                 st.write(df)
