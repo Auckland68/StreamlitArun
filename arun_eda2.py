@@ -19,7 +19,6 @@ from nltk.corpus import stopwords
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('averaged_perceptron_tagger')
-nltk.download('wordnet')
 from nltk.util import ngrams
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
@@ -31,6 +30,7 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.callbacks import EarlyStopping,ModelCheckpoint
 from keras.layers import Dense,Flatten,Embedding,Dropout
 from keras.models import model_from_json
+
 #st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.title("Arun District Travel Review Data")
