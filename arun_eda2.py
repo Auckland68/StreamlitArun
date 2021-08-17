@@ -16,6 +16,9 @@ from collections import Counter
 import nltk
 import contractions
 from nltk.corpus import stopwords
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
 from nltk.util import ngrams
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
@@ -195,10 +198,6 @@ if dashboard_choice == "Exploratory Data Analysis":
         st.sidebar.markdown(random.iat[0,2])
 
 elif dashboard_choice == "Keyword Analysis":
-
-    nltk.download('punkt')
-    nltk.download('stopwords')
-    nltk.download('averaged_perceptron_tagger')
 
     # Get keywords by town, category and sentiment
     st.sidebar.subheader("Keywords By Town, Category and Sentiment")
