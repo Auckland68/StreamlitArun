@@ -45,7 +45,7 @@ st.sidebar.subheader("Arun District Travel Review Data")
 # Load dataset and cache the output
 DATA_URL = ("new_data.csv")
 
-@st.cache()
+@st.cache(TTL = 3600)
 def load_data():
     data = pd.read_csv(DATA_URL)
     return data
@@ -58,7 +58,7 @@ def open_tok(name):
         return file
 
 # load json and create model
-st.cache()
+st.cache(TTL = 3600)
 json_file = open('model10.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
@@ -68,7 +68,7 @@ loaded_model.load_weights("model10.h5")
 loaded_model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Load tokenizers and models
-st.cache()
+st.cache(TTL = 3600)
 accom_tok = open_tok("accom_tokprot4.pickle")
 food_tok = open_tok("food_tokprot4.pickle")
 attract_tok = open_tok("attract_tokprot4.pickle")
